@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrando no Desfile...</title>
+    
+    <!-- O Redirecionamento Mágico (Redireciona em 0 segundos) -->
+    <meta http-equiv="refresh" content="0; url=http://192.168.18.97:3000">
+    
+    <style>
+        body { font-family: sans-serif; text-align: center; padding: 50px; background-color: #f4f4f9; }
+        .loader { border: 5px solid #f3f3f3; border-top: 5px solid #28a745; border-radius: 50%; width: 40px; height: 40px; animation: spin 1s linear infinite; margin: 20px auto; }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+    </style>
+</head>
+<body>
+    <h2>Sessetembro</h2>
+    <div class="loader"></div>
+    <p>Se não for automático, <a href="http://192.168.18.97:3000">clique aqui</a>.</p>
+
+    <!-- O Plano B (Redirecionamento via JavaScript) -->
+    <script>
+        setTimeout(() => {
+            window.location.href = "http://192.168.18.97:3000";
+        }, 500);
+    </script>
+</body>
+</html>
